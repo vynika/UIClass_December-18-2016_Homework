@@ -1,0 +1,27 @@
+1Q. What is version control tool?
+A. version control is also known as sorce control, is the management of changes to documents, computer programs, and other information. It is usually any kind of practice that tracks and provides control over the changes to source code.
+
+2Q. What is a repository?
+A. It is the central location for the data to store and manage.
+
+3Q. Why do we need to use repository in software development?
+A. A software repository is a storage location for which software packages may be retrieved and installed on a computer. As software repositories are designed to include useful packages, major repositories are designed to be malware free.
+
+4Q. What is GIT?
+A. GIT is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for software development,but it can be used to keep track of changes in any files. As a distributed revision control system
+
+5Q. What is GitHub?
+A. GitHub is a web-based Git repository hosting service. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
+
+6Q. What is the difference between GIT and GitHub?
+A. Git is the distributed version control system. Git is responsible for keeping track of changes to content (usually source code files), and it provides mechanisms for sharing that content with others. GitHub is a company that provides Git repository hosting.
+
+7Q. What is pull, push, commit in GIT?
+A. Commit - committing is the process which records changes in the repository. Think of it as a snapshot of the current status of the project. Commits are done locally.
+
+Push - pushing sends the recent commit history from your local repository up to GitHub. If you’re the only one working on a repository, pushing is fairly simple. If there are others accessing the repository, you may need to pull before you can push.
+
+Pull - a pull grabs any changes from the GitHub repository and merges them into your local repository.
+
+8Q. What are merge conflicts? 
+A. Merge conflicts may occur if competing changes are made to the same line of a file or when a file is deleted that another person is attempting to edit. For information on how to resolve these situations, see "Competing line change merge conflicts and "Removed file merge conflicts."
