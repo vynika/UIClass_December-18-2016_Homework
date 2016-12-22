@@ -43,3 +43,55 @@ A. To resolve a merge conflict caused by competing line changes, you must choose
 		$ git commit -m "Resolved merge conflict by incorporating both suggestions."
 
 
+2Q. What is HTML? How to create a HTML document?
+A. HTML: Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.
+
+HTML document: The most common markup language intended for Web pages. It provides the means for describing the structures of text-based information by assigning certain texts as headings, lists, paragraphs, links, etc. and supplementing the said texts with embedded images, interactive forms and other kinds of objects. Notepad is the most common application that HTML programmers utilize because it is capable of editing HTML. At the same time, it allows the user to view what he or she has edited by means of a Web browser.
+
+Hypertext Markup Language (HTML) is the most common language used to create documents on the World Wide Web. HTML uses hundreds of different tags to define a layout for web pages. Most tags require an opening <tag> and a closing </tag>.
+
+Follow the four steps below to create your first web page with Notepad or TextEdit.
+	Step 1: Open Notepad (PC) Open Notepad in Windows 8 or later
+	Step 2: Write Some HTML. Write or copy some HTML into Notepad.
+	Step 3: Save the HTML Page.
+	Step 4: View HTML Page in Your Browser.
+
+	Example: 
+	<html>
+	<body>
+
+	<h1>My First example</h1>
+	<p>My first program.</p>
+
+	</body>
+	</html>
+
+3Q. What is doctype?
+A. The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in. In HTML 4.01, the <!DOCTYPE> declaration refers to a DTD, because HTML 4.01 was based on SGML.
+
+4Q. What is tag and element in HTML?
+A. Tag: HTML tags are the hidden keywords within a web page that define how the browser must format and display the content. Most tags must have two parts, an opening and a closing part. For example, <html> is the opening tag and </html> is the closing tag.
+
+Element: An HTML element is an individual component of an HTML document or web page, once this has been parsed into the Document Object Model. HTML is composed of a tree of HTML elements and other nodes, such as text nodes. Each element can have HTML attributes specified.
+
+5Q. What is an attribute?
+A. An HTML attribute is a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag.
+
+6Q. Create a HTML page. 
+A. 
+
+<html>
+<head>
+
+<title> Hello world </title>
+
+</head>
+
+<body> 
+ <br> <p> hello world..!!! :) </p>
+</br>
+</body>
+</html>
+
+
+
