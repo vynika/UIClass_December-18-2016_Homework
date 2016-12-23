@@ -1,0 +1,63 @@
+1Q. How to create a list in HTML? 
+A. Lists may be unordered lists or ordered lists.
+	1. Unordered list: 
+	* An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+	* The list items will be marked with bullets (small black circles) by default.
+
+	2. Ordered list:
+	* An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+	* The list items will be marked with numbers by default.
+
+2Q. How to include images in HTML?
+A. In HTML, images are defined with the <img> tag.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The src attribute specifies the URL (web address) of the image.
+
+Syntax: <img src="url" alt="some_text" style="width:width;height:height;">
+
+3Q. How to take user input in HTML?
+A. By using HTML input types like:
+	* Input text type : <input type="text" name="firstname">
+	* Input type password: <input type="password" name="psw">
+	* Input type submit : <input type="submit" value="Submit">
+	* Input type reset:  <input type="reset">
+	* input type Radio: <input type="radio" name="gender" value="female"> Female
+	* Input type Checkbox:  <input type="checkbox" name="books" value="English book"> I have an english book <br>
+And few more input types.
+
+4Q. How to have links to different web pages and link to different part of same page?
+A. Links are found in nearly all web pages. Links allow users to click their way from page to page.
+* HTML links are hyperlinks.
+
+* Can click on a link and jump to another document.
+
+* Moving the mouse over a link, the mouse arrow will turn into a little hand.
+Syntax: <a href="url">link text</a>
+
+To move to different parts in same web page we use local links.
+ * A local link (link to the same web site) is specified with a relative URL (without http://www....).
+ Syntax: <a href="html_images.asp">HTML Images</a>
+
+ 5Q. What is head, body, element in html and why do we need them in pages?
+ A. Head: The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+
+HTML metadata is data about the HTML document. Metadata is not displayed.
+
+Metadata typically define the document title, character set, styles, links, scripts, and other meta information.
+
+ body: The visible part of the HTML document is between <body> and </body>.
+
+ Element: An HTML element usually consists of a start tag and end tag, with the content inserted in between:
+
+   <tagname>Content goes here...</tagname>
+
+ 6Q. What are semantic elements, Describe about each one of them?
+ A. A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+
