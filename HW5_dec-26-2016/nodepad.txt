@@ -1,0 +1,123 @@
+1. Explain all input types?
+A. The type attribute specifies the type of <input>   	element to display.
+  i. The default type is: text.
+  <input type="text"> defines a one-line text input field.
+  ii. password.
+  iii. submit
+  iv. reset.
+ v. radio.
+ vi. checkbox 
+ vii. button & few more.
+
+
+ 2. Explain all input attributes?
+ A. There are various input type attributes in html: they are:
+ i. button
+ ii. checkbox
+ iii. color
+ iv. date
+ v. datetime-local
+ vi. email
+ vii. file
+ viii. hidden
+ ix. image
+ x. month
+ xi. number
+ xii. password
+ xiii. radio
+ xiv. range
+ xv. reset
+ xvi. submit
+ xvii. tel
+ xviii. text
+ xix. time
+ xx. url
+ xxi. week
+
+3. What are semantic elements?
+A. Semantics is the study of the meanings of words and phrases in a language.
+
+Semantic elements = elements with a meaning.
+ A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer">
+to indicate navigation, header, and footer.
+
+HTML5 offers new semantic elements to define different parts of a web page:  
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+
+4. Difference between article and section?
+A.  article:
+The <article> element specifies independent, self-contained content.
+
+An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.
+
+Examples of where an <article> element can be used:
+
+Forum post
+Blog post
+Newspaper article
+
+section:
+
+The <section> element defines a section in a document.
+
+According to W3C's HTML5 documentation: "A section is a thematic grouping of content, typically with a heading."
+
+A home page could normally be split into sections for introduction, content, and contact information.
+
+5. explain about all the semantic elements in HTML5.?
+A. <article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+
+6. What is form and what is form validation in html?
+A. The HTML <form> element defines a form that is used to collect user input.
+An HTML form contains form elements.
+
+Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
+
+Form validation:
+HTML form validation can be done by JavaScript.
+
+If a form field (fname) is empty, this function alerts a message, and returns false, to prevent the form from being submitted.
+
+7. What is the difference between HTML4 and HTML5, explain in detail?
+  A.  HTML5 has the following new input types: color, date, datetime-local, month, week, time, email, number, range, search, tel, and url.
+
+  1. HTML5 is work in progress.
+  2. simplified syntax in html5
+  3. the new <canvas> element.
+  4. the <header> and <footer> elements.
+  5. new <section> and <article> elements.
+  6. new <menu> and <figure> elements.
+  7. New <audio> and <video> elements.
+  8. New forms.
+  9. No more <frame> <center> <big>
