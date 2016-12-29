@@ -105,7 +105,7 @@ An HTML form contains form elements.
 Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.
 
 Form validation:
-HTML form validation can be done by JavaScript.
+HTML form validation can be done by JavaScript..
 
 If a form field (fname) is empty, this function alerts a message, and returns false, to prevent the form from being submitted.
 
