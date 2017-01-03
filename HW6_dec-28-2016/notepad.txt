@@ -1,0 +1,80 @@
+1. Different types in CSS?
+A. There are three types of CSS styles:
+
+Inline styles:
+Inline styles are styles that are written directly in the tag on the document. Inline styles affect only the tag they are applied to.
+
+<a href="" style="text-decoration: none;">
+
+Embedded styles( internal styles):
+Embedded styles are styles that are embedded in the head of the document. Embedded styles affect only the tags on the page they are embedded in.
+
+<style type="text/css">
+p { color: #00f; }
+</style>
+
+External styles:
+External styles are styles that are written in a separate document and then attached to various Web documents. External style sheets can affect any document they are attached to.
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+2. What is cascading in CSS?
+A. "Cascading" means that styles can fall (or cascade) from one style sheet to another, enabling multiple style sheets to be used on one HTML document.
+
+What style will be used when there is more than one style specified for an HTML element?
+
+Generally speaking we can say that all the styles will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+
+Inline style (inside an HTML element)
+External and internal style sheets (in the head section)
+Browser default
+So, an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the <head> tag, or in an external style sheet, or a browser default value.
+
+3. Why do we need to use CSS?
+A. Use CSS to define styles for your documents, including the design, layout and variations in display for different devices and screen sizes. You can place your CSS in the <head> of a document with an embedded style sheet, or attach a separate file that defines your styles with an external style sheet.
+CSS is a language that describes the style of an HTML document.
+CSS describes how HTML elements should be displayed.
+
+4. Which type of CSS is a better practice?
+A. 
+
+5. what are selectors and why do we need them in CSS?
+A.
+Type selectors
+This basic selector chooses all elements that matches the given name.
+Syntax: eltname
+Example: input will match any <input> element.
+Class selectors
+This basic selector chooses elements based on the value of their class attribute.
+Syntax: .classname
+Example: .index will match any element that has the class index (likely defined by a class="index" attribute or similar).
+ID selectors
+This basic selector chooses nodes based on the value of its id attribute. There should be only one element with a given ID in a document.
+Syntax: #idname
+Example: #toc will match the element that has the id toc (likely defined by a id="toc" attribute or similar).
+Universal selectors
+This basic selector chooses all nodes. It also exists in a one-namespace only and in an all-namespace variant too.
+Syntax: * ns|* *|*
+Example: * will match all the elements of the document.
+Attribute selectors
+This basic selector chooses nodes based on the value of one of its attributes.
+Syntax: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+Example: [autoplay] will match all the elements that have the autoplay attribute set (to any value).
+Combinators
+Adjacent sibling selectors
+The '+' combinator selects nodes that immediately follow the former specified element.
+Syntax: A + B
+Example: ul + li will match any <li> that immediately follows a <ul>.
+General sibling selectors
+The '~' combinator selects nodes that follow (not necessarily immediately) the former specified element, if both elements shared the same parent.
+Syntax: A ~ B
+Example: p ~ span will match all <span> elements that follow a <p> element inside the same element.
+Child selectors
+The '>' combinator selects nodes that are direct children of the former specified element.
+Syntax: A > B
+Example: ul > li will match all <li> elements that are inside a <ul> element.
+Descendant selectors
+The ' ' combinator selects nodes that are children (not necessary direct children) of the former specified element.
+Syntax: A B
+Example: div span will match any <span> element that is inside a <div> element.
+
