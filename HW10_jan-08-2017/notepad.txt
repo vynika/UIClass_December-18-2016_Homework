@@ -1,0 +1,106 @@
+1Q. Bootstrap buttons?
+A. Bootstrap provides 7 styles of buttons:
+1. Default
+2. Primary
+3. Success
+4. Info
+5. Warning
+6. Danger
+7. Link
+
+
+2Q. Bootstrap input and output sizes?
+A. Bootstrap provides four button sizes.
+1. Large
+2. Medium
+3. Small
+4. X-small
+
+3Q. Bootstrap Glyphicon?
+A. Below is a list of all Bootstrap 
+Includes over 250 glyphs in font format from the Glyphicon Halflings set. Glyphicons Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. here are few:
+Glyphicons:
+1. Asterisk
+2. Plus
+3. Minus
+4. eur
+5. euro
+6. cloud
+7. envelope
+8. pencil
+9.Glass
+10. music
+11. search
+12. heart
+13. star
+14. star-empty
+15. user
+16. film
+17. th-large
+18. th
+19. th-list
+20. ok
+21. remove
+22. zoom-in and many more.
+
+
+4Q. Bootstrap 
+images: bootstrap images have different shapes like: Rounded corners, circle, thumbnail.
+
+wells:
+The .well class adds a rounded border around an element with a gray background color and some padding.
+syntax:
+<div class="well">Basic Well</div>
+ wells have different sizes like: small, normal, large
+
+ syntax:
+ <div class="well well-sm">Small Well</div>
+<div class="well well-lg">Large Well</div>
+
+Jumbotorn: A jumbotron indicates a big box for calling extra attention to some special content or information. A jumbotron is displayed as a grey box with rounded corners. It also enlarges the font sizes of the text inside it. Tip: Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.
+
+Panel: A panel in bootstrap is a bordered box with some padding around its content.
+
+syntax: <div class="panel panel-default">
+  <div class="panel-body">A Basic Panel</div>
+</div>
+
+alerts: 
+Add a basic alert by creating a wrapper <div> and adding a class of .alert and one of the four contextual classes (e.g., .alert-success, .alert-info, .alert-warning, .alert-danger)
+Also add optional .alert-dismissable to the above <div> class.
+Add a close button.
+
+badges:
+Badges are similar to labels; the primary difference is that the corners are more rounded. Badges are mainly used to highlight new or unread items. To use badges just add <span class = "badge"> to links, Bootstrap navs, and more.
+labels:  Labels are used to provide additional information about something.
+syntax: 
+<h1>Example <span class="label label-default">New</span></h1>
+<h2>Example <span class="label label-default">New</span></h2>
+<h3>Example <span class="label label-default">New</span></h3>
+<h4>Example <span class="label label-default">New</span></h4>
+
+lists:
+he most basic list group is an unordered list with list items:
+
+First item
+Second item
+Third item
+
+pagination:
+If you have a web site with lots of pages, you may wish to add some sort of pagination to each page.
+syntax:
+
+<ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+
+Pills: Pills are created with <ul class="nav nav-pills">. Also mark the current page with <li class="active">.
+ 
+ tabs:
+ abs are created with <ul class="nav nav-tabs">:
+
+Tip: Also mark the current page with <li class="active">.
