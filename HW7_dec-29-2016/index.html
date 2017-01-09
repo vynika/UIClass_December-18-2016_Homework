@@ -1,0 +1,204 @@
+1.<!DOCTYPE html>
+<html>
+<head>
+	<title> selectors</title>
+	<style>
+#firstname {
+    background-color: yellow;
+}
+
+.intro {
+    background-color: blue;
+}
+
+a[attribute] {
+    color: yellow;
+}
+
+</style>
+</head>
+<body>
+ <h1>Welcome..!!</h1>
+<p id="firstname">My name is vynika</p>
+<div class="intro">
+  <p>I live in San Jose.</p>
+
+  <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+</body>
+</html>
+<br>
+<br>
+-------------------------------------
+<br>
+<br>
+<html>
+<head>
+<style>
+.intro {
+    background-color: yellow;
+}
+#example {
+    color: red;
+    font: 20px;
+}
+a[target] {
+    background-color: blue;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+<div class="intro">
+  <p>this a example for class selector</p>
+  <p id="example">this is example for id selector.</p>
+</div>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+
+</body>
+</html>
+<br>
+<br>
+-----------------
+4
+<br>
+<br>
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+html {
+  font-size: small;
+  color: blue;
+}
+
+#ex1 {
+  background-color: yellow;
+  color: red;
+  font: 20px;
+  border: 1px;
+
+}
+
+</style>
+</head>
+<body>
+<p> hello everyone..!!!
+</body>
+</html>
+<br>
+<br>
+----------
+<br>
+<br>
+5 <!DOCTYPE html>
+<html>
+<head>
+<style>
+div p {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+
+<br>
+<br>
+----------
+<br>
+<br>
+6. <!DOCTYPE html>
+<html>
+<head>
+<style>
+div > p {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+   <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> 
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+</body>
+</html>
+<br>
+<br>
+------------<br>
+<br>
+7. <!DOCTYPE html>
+<html>
+<head>
+<style>
+div + p {
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+
+</body>
+</html>
+<br>
+<br>
+----------------------------<br>
+<br>
+9.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+[class^="top"] {
+    background: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+
+<p><b>Note:</b> For [<i>attribute</i>^=<i>value</i>] to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
