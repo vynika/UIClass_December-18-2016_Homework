@@ -1,0 +1,90 @@
+1Q. Display property value?
+A. The "display" property. display is CSS's most important property for controlling layout. Every element has a default display value depending on what type of element it is. The default for most elements is usually block or inline.
+
+inline:	Default value. Displays an element as an inline element.
+block:	Displays an element as a block element.
+flex:	Displays an element as an block-level flex container.	
+inline-block:	Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box	
+inline-flex:	Displays an element as an inline-level flex container. New in CSS3	
+inline-table:	The element is displayed as an inline-level table	 
+list-item:	Let the element behave like a <li> element.
+run-in:	Displays an element as either block or inline, depending on context	 
+table:	Let the element behave like a <table> element.
+table-caption:	Let the element behave like a <caption> element.	
+table-column-group:	Let the element behave like a <colgroup> element.	
+table-header-group:	Let the element behave like a <thead> element.	
+table-footer-group:	Let the element behave like a <tfoot> element.	
+table-row-group:	Let the element behave like a <tbody> element	.
+table-cell:	Let the element behave like a <td> element	.
+table-column:	Let the element behave like a <col> element	.
+table-row:	Let the element behave like a <tr> element.	
+none:	The element will not be displayed at all (has no effect on layout).
+initial:	Sets this property to its default value. Read about initial.
+inherit:	Inherits this property from its parent element. 
+
+2Q. What is display none and visibility hidden differences in CSS? When do we use either one of them?
+A. Display none:
+display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
+
+The <script> element uses display: none; as default.
+
+Visibility hidden:
+this property makes the text content to hide from viewing it.
+syntax:
+h2 {
+    visibility: hidden;
+}
+
+difference between both of them is:
+display:none means that the tag in question will not appear on the page at all (although you can still interact with it through the dom). There will be no space allocated for it between the other tags.
+
+visibility:hidden means that unlike display:none, the tag is not visible, but space is allocated for it on the page. The tag is rendered, it just isn't seen on the page.
+
+3Q.CSS box model?
+A. All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+Explanation of the different parts:
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+The box model allows us to add a border around elements, and to define space between elements. 
+
+syntax:
+div {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+
+4Q. Box sizing in CSS?
+A. The CSS3 box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element padding and border are included in the width and height: Both divs are the same size now!
+syntax:
+div {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+
+5Q. What is SASS?
+A. SASS: Synthatically Awesom StyleSheets.
+Sass is a scripting language that is interpreted into Cascading Style Sheets (CSS). SassScript is the scripting language itself. Sass consists of two syntaxes. The original syntax, called "the indented syntax", uses a syntax similar to Haml.[4] It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, "SCSS", uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate lines within a block. The indented syntax and SCSS files are traditionally given the extensions .sass and .scss, respectively.
+
+ref:
+http://sass-lang.com/
+
+6Q. What is preprocessor? why do you need to use preprocessor?
+A. 
+CSS Pre-processors are in our development life for years. In their first implementations, they had few features. But nowadays, they are the key ingredients and must have tools for CSS development. Pre-processors extend CSS with variables, operators, interpolations, functions, mixins and many more other usable assets. SASS, LESS and Stylus are the well known ones. By the time this article is published, SASS is at version 3.3.5, LESS is at version 1.7.0 and Stylus is at version 0.43.1
+
+
+CSS is primitive and incomplete. Building a function, reusing a definition or inheritance are hard to achieve. For bigger projects, or complex systems, maintenance is a very big problem. On the other hand, web is evolving, new specs are being introduced to HTML as well as CSS. Browsers apply these specs while they are in proposal state with their special vendor prefixes. In some cases (as in background gradient), coding with vendor specific properties become a burden. You have to add all different vendor versions for a single result.
+ref:
+https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus

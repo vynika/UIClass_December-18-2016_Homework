@@ -1,0 +1,111 @@
+2. Visibility hidden
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1.visible {
+    visibility: visible
+}
+
+h1.hidden {
+    visibility: hidden
+}
+</style>
+</head>
+<body>
+
+<h1 class="visible">This is a visible heading</h1>
+<h1 class="hidden">This is an invisible heading</h1>
+<p>Notice that the invisible heading still takes up space.</p>
+
+</body>
+</html>
+<br>
+<br>
+------------------------------------------
+<br>
+<br>
+3. <!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+</style>
+</head>
+<body>
+
+<h2>Demonstrating the Box Model</h2>
+
+<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+
+<div>This text is the actual content of the box.</div>
+
+</body>
+</html>
+<br>
+<br>
+----------------------------------------
+<br>
+<br>
+4.
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+}
+
+.div2 {
+    width: 300px;
+    height: 100px;    
+    padding: 50px;
+    border: 1px solid red;
+}
+
+.div3 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.div4 {
+    width: 300px;
+    height: 100px;    
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<h2>Without box-sizing</h2>
+<div class="div1">This div is smaller (width is 300px and height is 100px).</div>
+<br>
+<div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
+
+<h2>With box-sizing</h2>
+<div class="div3">Both divs are the same size now!</div>
+<br>
+<div class="div4">Hooray!</div>
+
+</body>
+</html>
+<br>
+<br>
+-------------------------------------------
+<br>
+<br>
+
+
