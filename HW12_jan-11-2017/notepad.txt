@@ -1,0 +1,43 @@
+1Q. What are the datatypes in Javascript?
+A. There are five primitive data types in JavaScript:
+number.
+string.
+boolean.
+undefined.
+null.
+
+2Q. What is the difference between Java and Javascript especially interms of variables?
+A. 
+
+
+
+3Q. Why do we use javascript in Web pages?
+A. JavaScript is most commonly used as a client side scripting language. This means that JavaScript code is written into an HTML page. When a user requests an HTML page with JavaScript in it, the script is sent to the browser and it's up to the browser to do something with it.
+
+JavaScript is the programming language of HTML and the Web.
+JavaScript is easy to learn.
+JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages.
+
+   2. CSS to specify the layout of web pages.
+
+   3. JavaScript to program the behavior of web pages.
+Within a browser, JavaScript doesn't do anything by itself. You run JavaScript from inside your HTML webpages. To call JavaScript code from within HTML, you need the <script> element. There are two ways to use script, depending on whether you're linking to an external script or embedding a script right in your webpage.
+
+4Q. How to include Javascript into webpages?
+A. shown in the example.
+
+In HTML, JavaScript code must be inserted between <script> and </script> tags.
+A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+
+For example: A function can be called when an event occurs, like when the user clicks a button.
+
+
+5Q. Where to include Javascript in webpages and why?
+A. Steps:
+1.Open up the Notepad or other simple text-editing software.
+2.Start a basic HTML document.
+3.Add a script tag to the HTML's head, and let the text editor know that you'd like to use a javascript language to write your HTML's javascript "program".
+4.Make sure to end your HTML document.
+5.Save your page.
