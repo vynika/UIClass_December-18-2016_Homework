@@ -1,0 +1,122 @@
+1Q. Operational precedence?
+A. In mathematics and computer programming, the order of operations (or operator precedence) is a collection of rules that reflect conventions about which procedures to perform first in order to evaluate a given mathematical expression. Thus, the expression 2 + 3 × 4 is interpreted so as to have the value 14, not 20.
+
+Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.
+
+A common example:
+
+3 + 4 * 5 // returns 23
+
+When an expression contains multiple operators, the precedence of the operators controls the order in which the individual operators are evaluated. For example, the expression x + y * z is evaluated as x + (y * z) because the * operator has higher precedence than the binary + operator. 
+The precedence of an operator is established by the definition of its associated grammar production. For example, an additive-expression consists of a sequence of multiplicative-expressions separated by + or - operators, thus giving the + and - operators lower precedence than the *, /, and % operators.
+
+2Q. Truthy value and Falsy value?
+A. In JavaScript, a truthy value is a value that translates to true when evaluated in a Boolean context. All values are truthy unless they are defined as falsy (i.e., except for false , 0 , "" , null , undefined , and NaN ).
+
+The following values are always falsy:
+
+false
+0 (zero)
+"" (empty string)
+null
+undefined
+NaN (a special Number value meaning Not-a-Number!)
+All other values are truthy, including "0" (zero in quotes), "false" (false in quotes), empty functions, empty arrays, and empty objects.
+
+
+var a = !!(0); // variable is set to false
+var b = !!("0"); // true
+
+Falsy values follow some slightly odd comparison rules which can lead to errors in program logic.
+
+The falsy values false, 0 (zero), and "" (empty string) are all equivalent and can be compared against each other:
+
+
+var c = (false == 0); // true
+var d = (false == ""); // true
+var e = (0 == ""); // true
+The falsy values null and undefined are not equivalent to anything except themselves.
+
+3Q. Logical and (&&) , logical or (||)?
+A. syntax for logical and (&&):
+  expression  &&  expression 
+
+
+  The logical AND operator (&&) returns the boolean value true if both operands are true and returns false otherwise. The operands are implicitly converted to type bool prior to evaluation, and the result is of type bool. Logical AND has left-to-right associativity.
+The operands to the logical AND operator need not be of the same type, but they must be of integral or pointer type. The operands are commonly relational or equality expressions.
+The first operand is completely evaluated and all side effects are completed before continuing evaluation of the logical AND expression.
+The second operand is evaluated only if the first operand evaluates to true (nonzero). This evaluation eliminates needless evaluation of the second operand when the logical AND expression is false. You can use this short-circuit evaluation to prevent null-pointer dereferencing. 
+
+syntax for logical or (||):
+expression || expression
+
+he logical OR operator (||) returns the boolean value true if either or both operands is true and returns false otherwise. The operands are implicitly converted to type bool prior to evaluation, and the result is of type bool. Logical OR has left-to-right associativity.
+The operands to the logical OR operator need not be of the same type, but they must be of integral or pointer type. The operands are commonly relational or equality expressions.
+The first operand is completely evaluated and all side effects are completed before continuing evaluation of the logical OR expression.
+The second operand is evaluated only if the first operand evaluates to false (0). This eliminates needless evaluation of the second operand when the logical OR expression is true.
+
+
+4Q. Conditions in javascript?
+A.Conditional statements are used to perform different actions based on different conditions.
+
+Very often when you write code, you want to perform different actions for different decisions.
+
+You can use conditional statements in your code to do this.
+
+In JavaScript we have the following conditional statements:
+
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed
+
+5Q. Loops-- while(), do while(), for().
+A. avaScript supports different kinds of loops:
+
+for - loops through a block of code a number of times
+for/in - loops through the properties of an object
+while - loops through a block of code while a specified condition is true
+do/while - also loops through a block of code while a specified condition is true
+
+
+The for loop is often the tool you will use when you want to create a loop.
+
+The for loop has the following syntax:
+
+for (statement 1; statement 2; statement 3) {
+    code block to be executed
+}
+
+
+The While Loop
+The while loop loops through a block of code as long as a specified condition is true.
+
+Syntax
+while (condition) {
+    code block to be executed
+}
+
+The Do/While Loop
+The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+Syntax
+do {
+    code block to be executed
+}
+while (condition);
+
+6Q. Increment and decrement (pre and post)?
+A.
+The increment operator (++) increments numbers.
+
+Incrementing
+var x = 5;
+x++;
+var z = x;
+
+The decrement operator (--) decrements numbers.
+
+Decrementing
+var x = 5;
+x--;
+var z = x;
