@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The toString() method converts a number to a string.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+
+<script>
+var a = 123;
+document.getElementById("demo").innerHTML =
+    a.toString() + "<br>" +
+   (123).toString() + "<br>" +
+   (100 + 23).toString();
+   
+   
+var b = 9.656;
+document.getElementById("demo1").innerHTML =
+    b.toExponential() + "<br>" + 
+    b.toExponential(2) + "<br>" + 
+    b.toExponential(4) + "<br>" + 
+    b.toExponential(6);
+    
+var x = 9.656;
+document.getElementById("demo2").innerHTML =
+    x.toFixed(0) + "<br>" +
+    x.toFixed(2) + "<br>" +
+    x.toFixed(4) + "<br>" +
+    x.toFixed(6);
+    
+var d = 5.1;
+document.getElementById("demo3").innerHTML = 
+    d.toPrecision() + "<br>" +
+    d.toPrecision(2) + "<br>" +
+    d.toPrecision(4) + "<br>" +
+    d.toPrecision(6);  
+    
+var e = 100;
+document.getElementById("demo4").innerHTML = 
+    e.valueOf() + "<br>" +
+    (123).valueOf() + "<br>" +
+    (100 + 23).valueOf();
+</script>
+
+</body>
+</html>
+<br>
+<br>
+-----------------------------
+<br>
+<br>
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="p1">Please locate where 'locate' occurs!.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<p id="p1">Please locate where 'locate' occurs!.</p>
+
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo2"></p>
+
+<script>
+
+function myFunction() {
+    var str = document.getElementById("p1").innerHTML;
+    var pos = str.indexOf("locate");
+    document.getElementById("demo").innerHTML = pos;   
+}
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo1").innerHTML = txt.length;
+
+function myFunction1() {
+    var str = document.getElementById("p1").innerHTML;
+    var pos = str.lastIndexOf("locate");
+    document.getElementById("demo2").innerHTML = pos;
+}
+</script>
+
+</body>
+</html>
+
+<br>
+<br>
+-----------------------------
+<br>
+<br>
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits.join(" * ");
+</script>
+
+</body>
+</html>

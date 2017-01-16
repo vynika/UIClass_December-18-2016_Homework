@@ -1,0 +1,122 @@
+1Q. methods in javaScript?
+A. Numbers:
+The Number JavaScript object is a wrapper object allowing you to work with numerical values. A Number object is created using the Number() constructor.
+
+Syntax
+new Number(value);
+
+Parameters:
+value:
+The numeric value of the object being created.
+
+these are the various methods for numbers;
+
+Number.isFinite()
+Number.isInteger()
+Number.isNaN()
+Number.isSafeInteger()
+Number.parseFloat()
+Number.parseInt()
+Number.prototype.toExponential()
+Number.prototype.toFixed()
+Number.prototype.toLocaleString()
+Number.prototype.toPrecision()
+Number.prototype.toSource()
+Number.prototype.toString()
+Number.prototype.valueOf()
+
+string:
+String Methods and Properties
+Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).
+
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+
+these are the various methods for strings;
+String.fromCharCode()
+String.fromCodePoint()
+String.prototype.anchor()
+String.prototype.big()
+String.prototype.blink()
+String.prototype.bold()
+String.prototype.charAt()
+String.prototype.charCodeAt()
+String.prototype.codePointAt()
+String.prototype.concat()
+String.prototype.endsWith()
+String.prototype.fixed()
+String.prototype.fontcolor()
+String.prototype.fontsize()
+String.prototype.includes()
+String.prototype.indexOf()
+String.prototype.italics()
+String.prototype.lastIndexOf()
+String.prototype.link()
+String.prototype.localeCompare()
+String.prototype.match()
+String.prototype.normalize()
+String.prototype.padEnd()
+String.prototype.padStart()
+String.prototype.quote()
+String.prototype.repeat()
+String.prototype.replace()
+String.prototype.search()
+String.prototype.slice()
+String.prototype.small()
+String.prototype.split()
+String.prototype.startsWith()
+String.prototype.strike()
+String.prototype.sub()
+String.prototype.substr()
+String.prototype.substring()
+String.prototype.sup()
+String.prototype.toLocaleLowerCase()
+String.prototype.toLocaleUpperCase()
+String.prototype.toLowerCase()
+String.prototype.toSource()
+String.prototype.toString()
+String.prototype.toUpperCase()
+String.prototype.trim()
+String.prototype.trimLeft()
+String.prototype.trimRight()
+String.prototype.valueOf()
+String.prototype[@@iterator]()
+String.raw()
+
+arrays Methods:
+
+
+Array.from()
+Array.isArray()
+Array.observe()
+Array.of()
+Array.prototype.concat()
+Array.prototype.copyWithin()
+Array.prototype.entries()
+Array.prototype.every()
+Array.prototype.fill()
+Array.prototype.filter()
+Array.prototype.find()
+Array.prototype.findIndex()
+Array.prototype.forEach()
+Array.prototype.includes()
+Array.prototype.indexOf()
+Array.prototype.join()
+Array.prototype.keys()
+Array.prototype.lastIndexOf()
+Array.prototype.map()
+Array.prototype.pop()
+Array.prototype.push()
+Array.prototype.reduce()
+Array.prototype.reduceRight()
+Array.prototype.reverse()
+Array.prototype.shift()
+Array.prototype.slice()
+Array.prototype.some()
+Array.prototype.sort()
+Array.prototype.splice()
+Array.prototype.toLocaleString()
+Array.prototype.toSource()
+Array.prototype.toString()
+Array.prototype.unshift()
+Array.prototype.values()
+Array.prototype[@@iterator]()
