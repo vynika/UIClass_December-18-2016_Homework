@@ -1,0 +1,139 @@
+1Q. array methods:
+A. arrays Methods:
+
+
+Array.from()
+Array.isArray()
+Array.observe()
+Array.of()
+Array.prototype.concat()
+Array.prototype.copyWithin()
+Array.prototype.entries()
+Array.prototype.every()
+Array.prototype.fill()
+Array.prototype.filter()
+Array.prototype.find()
+Array.prototype.findIndex()
+Array.prototype.forEach()
+Array.prototype.includes()
+Array.prototype.indexOf()
+Array.prototype.join()
+Array.prototype.keys()
+Array.prototype.lastIndexOf()
+Array.prototype.map()
+Array.prototype.pop()
+Array.prototype.push()
+Array.prototype.reduce()
+Array.prototype.reduceRight()
+Array.prototype.reverse()
+Array.prototype.shift()
+Array.prototype.slice()
+Array.prototype.some()
+Array.prototype.sort()
+Array.prototype.splice()
+Array.prototype.toLocaleString()
+Array.prototype.toSource()
+Array.prototype.toString()
+Array.prototype.unshift()
+Array.prototype.values()
+Array.prototype[@@iterator]()
+
+2Q.what are the different ways to create objects?
+A.1. Simple Object Literal
+
+myApp.notepad  = {};
+myApp.notepad.writeable = true;
+myApp.notepad.font  = 'helvetica';
+myApp.notepad.setFont = function(theFont) {
+    myApp.notepad.font = theFont;
+}
+2. Nested Object Literal
+
+myApp.notepad  = {
+    writeable: true,
+    font: 'helvetica',
+    setFont: function(theFont) {
+        this.font = theFont;
+    }
+}
+3. Constructor using Object Literal
+
+myApp.Notepad = function(defaultFont) {
+    var  that = {};
+    that.writeable = true;
+    that.font = defaultFont;
+    that.setFont = function(theFont) {
+        that.font = theFont;
+    }
+    return that;
+}
+
+myApp.notepad1 =  myApp.Notepad('helvetica');
+4. Simple Constructor for new
+
+myApp.Notepad = function(defaultFont) {
+    this.writeable = true;
+    this.font = defaultFont;
+    this.setFont = function(theFont) {
+        this.font = theFont;
+    }
+}
+
+myApp.notepad1  = new myApp.Notepad('helvetica');
+5. Prototype with Constructor for new
+
+myApp.Notepad = function(defaultFont) {
+    this.font = defaultFont;
+}
+myApp.Notepad.prototype.writeable  = true;
+myApp.Notepad.prototype.setFont  = function(theFont) {
+    this.font = theFont;
+}
+myApp.notepad1  = new myApp.Notepad('helvetica');
+
+
+
+3Q. What are the properties in Objects?
+A. Working with objects. JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method.
+
+Properties are the values associated with a JavaScript object.
+
+A JavaScript object is a collection of unordered properties.
+
+Properties can usually be changed, added, and deleted, but some are read only.
+
+4Q.How to retrieve a property value in an object?
+A. The Object.values() method returns an array of a given object's own enumerable property values, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).
+
+Syntax
+Object.values(obj)
+
+5Q.How to add a new property into objects?
+A. Adding New Properties
+You can add new properties to an existing object by simply giving it a value.
+
+Assume that the person object already exists - you can then give it new properties.
+
+6Q.How to remove a property in a object?
+A. The delete keyword deletes a property from an object.
+
+7Q.How to update a property value in objects?
+A. 
+i have no clarity on this topic
+
+8Q. how to check if an property exists with in an object?
+The hasOwnProperty() method returns a boolean indicating whether the object has the specified property.
+
+Syntax
+obj.hasOwnProperty(prop)
+Parameters
+
+prop
+The String name or Symbol of the property to test.
+Return value
+
+A Boolean indicating whether or not the object has the specified property.
+
+Description
+Every object descended from Object inherits the hasOwnProperty method. This method can be used to determine whether an object has the specified property as a direct property of that object; unlike the in operator, this method does not check down the object's prototype chain.
+

@@ -1,0 +1,82 @@
+3A.
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>There are two different ways to access an object property:</p>
+<p>You can use .property or ["property"].</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+    firstname:"John",
+    lastname:"Doe",
+    age:50,
+    eyecolor:"blue"
+};
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+<br>
+<br>
+--------------------------
+<br>
+<br>
+5.<!DOCTYPE html>
+<html>
+<body>
+
+<p>You can add new properties to existing objects.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+    firstname:"John",
+    lastname:"Doe",
+    age:50,
+    eyecolor:"blue"
+};
+person.nationality = "English";
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.nationality + ".";
+</script>
+
+</body>
+</html>
+<br>
+<br>
+-------------------------------
+<br>
+<br>
+6 <!DOCTYPE html>
+<html>
+<body>
+
+<p>You can delete object properties.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+    firstname:"John",
+    lastname:"Doe",
+    age:50,
+    eyecolor:"blue"
+};
+delete person.age;
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+<br>
+<br>
+---------------------------------
+<br>
+<br>
