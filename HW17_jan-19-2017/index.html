@@ -1,0 +1,44 @@
+4. <html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+var myFather = new Person("John", "Doe", 50, "blue");
+var myMother = new Person("Sally", "Rally", 48, "green");
+
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.age + ". My mother is " + myMother.age; 
+</script>
+
+</body>
+</html>
+
+
+<br>
+
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(p1, p2) {
+    return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+</body>
+</html>

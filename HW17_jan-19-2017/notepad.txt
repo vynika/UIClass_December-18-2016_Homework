@@ -1,0 +1,82 @@
+1Q. What is Object.defineProperty? and all possible configuration options? description?
+A. A property which is defined without get / set / value / writable is called “generic” and is “typed” as a data descriptor. var o = {}; // Creates a new object // Example of an object property added with defineProperty with a data property descriptor Object.
+
+The Object.defineProperty() method defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
+
+Syntax
+Object.defineProperty(obj, prop, descriptor)
+
+parameters: 
+1. obj: the object on which to define the property.
+2. prop: the name of the property to be defined or modified.
+3. descriptor: The descriptor for the property being defined or modified.
+
+
+2Q. What is Object.create, Object.keys?
+A. The Object.create() :
+this method creates a new object with the specified prototype object and properties.
+
+Syntax
+Object.create(proto[, propertiesObject])
+
+Parameters
+
+proto:
+The object which should be the prototype of the newly-created object.
+
+propertiesObject:
+Optional. If specified and not undefined, an object whose enumerable own properties (that is, those properties defined upon itself and not enumerable properties along its prototype chain) specify property descriptors to be added to the newly-created object, with the corresponding property names. These properties correspond to the second argument of Object.defineProperties().
+
+Return value:
+
+A new object with the specified prototype object and properties.
+
+Exceptions:
+
+A TypeError exception if the proto parameter isn't null or an object.
+
+
+The Object.keys():
+this  method returns an array of a given object's own enumerable properties, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).
+
+Syntax
+Object.keys(obj)
+
+
+Parameters:
+
+obj:
+The object whose enumerable own properties are to be returned.
+
+Return value:
+
+An array of strings that represent all the enumerable properties of the given object.
+
+
+
+3Q.Can we create objects from functions?
+A.  No clear idea about this topic.
+
+4Q.what is a prototype?
+A. All JavaScript objects inherit the properties and methods from their prototype. Objects created using an object literal, or with new Object(), inherit from a prototype called Object.prototype. Objects created with new Date() inherit the Date.prototype. The Object.prototype is on the top of the prototype chain.
+
+5Q. what is this keyword and its significance?
+A. The this Keyword
+In JavaScript, the thing called this, is the object that "owns" the current code.
+
+The value of this, when used in a function, is the object that "owns" the function.
+Each method differs in how this is initialized.
+Note that this is not a variable. It is a keyword. You cannot change the value of this.
+ref: http://davidshariff.com/blog/javascript-this-keyword/
+
+6Q. what is a window?
+A. Window Object
+The window object represents an open window in a browser.
+
+If a document contain frames (<iframe> tags), the browser creates one window object for the HTML document, and one additional window object for each frame.
+
+Note: There is no public standard that applies to the Window object, but all major browsers support it.
+there are many window properties.
+
+7Q.Functions ? call back functions?
+A.Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value. In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object.
