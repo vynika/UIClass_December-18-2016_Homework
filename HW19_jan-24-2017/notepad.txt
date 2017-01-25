@@ -1,0 +1,43 @@
+1Q. What is self and why do we use it?
+A. self can refer to the window object, but typically that's not the case here.This  can be seen commonly above that setTimeout() : var self = this; They're keeping a reference to the current object, so later when we call self.keyword() then we are calling that method on that object, not any other.
+
+The self property returns the current window.
+The self property is often used in comparisons (like in the example above).
+This property is read-only.
+
+2Q. What are closures?
+A. Closures are functions that refer to independent (free) variables (variables that are used locally, but defined in an enclosing scope). In other words, these functions 'remember' the environment in which they were created.
+JavaScript variables can belong to the local or global scope.
+Private variables can be made possible with closures.
+
+3Q. What is Hoisting ?
+A. Hoisting is JavaScript's default behavior of moving declarations to the top.
+JavaScript Declarations are Hoisted
+In JavaScript, a variable can be declared after it has been used.
+In other words; a variable can be used before it has been declared.
+
+4Q. What are the different events in javascript or dom?
+A. Many different methods can be used to let JavaScript work with events:
+
+HTML event attributes can execute JavaScript code directly
+HTML event attributes can call JavaScript functions
+You can assign your own event handler functions to HTML elements
+You can prevent events from being sent or being handled.
+HTML DOM allows JavaScript to react to HTML events.
+
+5Q.How to attach events listeners to an elements?
+A. The addEventListener() method attaches an event handler to the specified element.
+
+The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+
+You can add many event handlers to one element.
+
+You can add many event handlers of the same type to one element, i.e two "click" events.
+
+You can add event listeners to any DOM object not only HTML elements. i.e the window object.
+
+The addEventListener() method makes it easier to control how the event reacts to bubbling.
+
+When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.
+
+You can easily remove an event listener by using the removeEventListener() method.
