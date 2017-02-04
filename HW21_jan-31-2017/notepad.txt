@@ -1,0 +1,87 @@
+1Q.what is an element.addEventListener(event, eventHandler, CaptureFlag) in javaScript?
+A.
+ref:
+http://www.w3schools.com/js/js_htmldom_eventlistener.asp
+
+
+
+
+
+2Q. What is a selector in javaScript?
+A. Get Elements by Matching the Value of the 「class」 Attribute. document.getElementsByClassName(" class_values ") → Return a live HTMLCollection. The class_values can be multiple classes separated by space. For example: "aa bb" , and it'll get elements, where each element is in both class “aa” and “bb”
+
+ref:
+http://xahlee.info/js/js_get_elements.html
+
+
+3Q. What is ID, class, tagName?
+A.ID:  document.getElementById(id_string) → Return a element object. Returns null if not found.
+
+var elem = document.getElementById("xyz");
+
+elem.style.color="red"; // change color to red
+Note: element id must be unique per HTML file. (embeded iframe counts as different HTML file.)
+
+TagName:
+ document.getElementsByTagName(tag_name) → Return a live HTMLCollection. The tag_name is "div", "span", "p", etc.
+
+// example of document.getElementsByTagName()
+
+var myList = document.getElementsByTagName("p"); // get all p elements
+
+myList.length; // show number of items
+
+myList[0].style.color = "red"; // make the first one red.
+
+Class:
+document.getElementsByClassName("class_values") → Return a live HTMLCollection. The class_values can be multiple classes separated by space. For example: "aa bb", and it'll get elements, where each element is in both class “aa” and “bb”.
+
+// get element of class abc
+
+var myList = document.getElementsByClassName("abc");
+
+myList[0].style.color = "red"; // make the first one red
+Note: a HTML element can belong to more than one class. 〔➤see HTML: Multiple Class Attribute Values〕.
+
+4Q. document.getElementById, document.getElementByClassname,
+document.getElementByTagName,
+document.querySelectorAll.
+
+A.
+Method	Description
+document.getElementById(id)	
+Description
+Find an element by element id
+
+
+document.getElementsByTagName(name)
+Description:
+Find elements by tag name
+
+
+document.getElementsByClassName(name)
+Description:
+Find elements by class name
+
+ref: http://www.w3schools.com/js/js_htmldom_document.asp
+
+5Q. Event propagation?
+A. Definition and Usage. The event.stopPropagation() method stops the bubbling of an event to parent elements, preventing any parent event handlers from being executed. Tip: Use the event.isPropagationStopped() method to check whether this method was called for the event.
+
+6Q.what is event bubbling and Capturing?
+A. 
+ref:
+
+https://javascript.info/tutorial/bubbling-and-capturing
+
+7Q. what is event.stopPropagation vs Prevents further propagation of the current event in the capturing and bubbling phases.
+
+Syntax
+event.stopPropagation();
+Example
+See Example 5: Event Propagation in the Examples chapter for a more detailed example of this method and event propagation in the DOM. in javascript?
+A.
+Prevents further propagation of the current event in the capturing and bubbling phases.
+
+Syntax
+event.stopPropagation();
