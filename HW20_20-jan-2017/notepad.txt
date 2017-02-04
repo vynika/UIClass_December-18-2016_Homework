@@ -6,4 +6,99 @@ A. IIFE (Immediately Invoked Function Expression) is a JavaScript function that 
  (function(a, b) { … })("hello", "world");
 
  2Q.What is namespacing in javaScript?
- A.
+ A. Namespacing in JavaScript
+
+Global variables should be reserved for objects that have system-wide relevance and they should be named to avoid ambiguity and minimize the risk of naming collisions. In practice this means you should avoid creating global objects unless they are absolutely necessary.
+
+Static Namespacing:
+
+I’m using static namespacing as an umbrella term for solutions in which the namespace label is effectively hard coded. It’s true, you could re-assign one namespace to another but the new namespace will reference the same objects as the old one.
+
+Using Object Literal Notation:
+
+Now we need only refer to the namespace name once, so switching the name later is a little easier (assuming you haven’t already referenced the namespace too often). There is still a danger that the value of this might throw a surprise – but its a little safer to assume that objects defined within an object literal construct will not be reassigned.
+
+The Module Pattern:
+
+I find myself using the module pattern more often these days. The logic is shielded from the global scope by a function wrapper (usually self-invoking) which returns an object representing the module’s public interface. By immediately invoking the function and assigning the result to a namespace variable, we lock up the module’s API in the namespace.
+
+
+ref: https://javascriptweblog.wordpress.com/2010/12/07/namespacing-in-javascript/
+
+3Q. What is module pattern?
+A. JavaScript Module Pattern:
+
+The module pattern is a common JavaScript coding pattern. It’s generally well understood, but there are a number of advanced uses that have not gotten a lot of attention. In this article, I’ll review the basics and cover some truly remarkable advanced topics, including one which I think is original.
+
+The Basics
+
+We’ll start out with a simple overview of the module pattern, which has been well-known since Eric Miraglia (of YUI) first blogged about it three years ago. If you’re already familiar with the module pattern, feel free to skip ahead to “Advanced Patterns”.
+
+Anonymous Closures
+
+This is the fundamental construct that makes it all possible, and really is the single best feature of JavaScript. We’ll simply create an anonymous function, and execute it immediately. All of the code that runs inside the function lives in a closure, which provides privacy and state throughout the lifetime of our application.
+
+syntax:
+(function () {
+	// ... all vars and functions are in this scope only
+	// still maintains access to all globals
+}());
+
+
+Notice the () around the anonymous function. This is required by the language, since statements that begin with the token function are always considered to be function declarations. Including () creates a function expression instead.
+
+Advanced Patterns
+
+While the above is enough for many uses, we can take this pattern farther and create some very powerful, extensible constructs. Lets work through them one-by-one, continuing with our module named MODULE.
+1.Augmentation
+2.Loose Augmentation
+3.Tight Augmentation
+4.Cloning and Inheritance and many more.
+
+4Q.What is a good practice of having too many global variabes?
+A. It is not a good practice to have too many global variables.
+
+Avoid Global Variables
+Minimize the use of global variables.
+
+This includes all data types, objects, and functions.
+
+Global variables and functions can be overwritten by other scripts.
+
+Use local variables instead, and learn how to use closures.
+
+
+Always try to Declare Local Variables
+All variables used in a function should be declared as local variables.
+
+Local variables must be declared with the var keyword, otherwise they will become global variables.
+
+Strict mode does not allow undeclared variables.
+
+5Q.What is Html DOM events?
+A. A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element. To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute: onclick=JavaScript. Examples of HTML events: When a user clicks the mouse.
+
+The DOM is a W3C (World Wide Web Consortium) standard. The DOM defines a standard for accessing documents: "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.
+
+
+
+6Q. What is an event listener in javaScript?How can we configure them?
+A.The addEventListener() method allows you to add event listeners on any HTML DOM object such as HTML elements, the HTML document, the window object, or other objects that support events, like the xmlHttpRequest object.
+
+syntax: void handleEvent(in Event event);
+
+
+
+7Q.What is event handler?
+
+
+ref:
+https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/Tutorial/Adding_Event_Handlers
+
+
+8Q. What is event propagation? what bubbling and capturing?
+A. event propagation:
+Definition and Usage. The event.stopPropagation() method stops the bubbling of an event to parent elements, preventing any parent event handlers from being executed. Tip: Use the event.isPropagationStopped() method to check whether this method was called for the event.
+
+Bubbling and capturing:
+https://javascript.info/tutorial/bubbling-and-capturing
