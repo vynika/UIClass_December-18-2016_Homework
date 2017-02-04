@@ -70,7 +70,7 @@ A. Definition and Usage. The event.stopPropagation() method stops the bubbling o
 
 6Q.what is event bubbling and Capturing?
 A. 
-ref:
+ref:.
 
 https://javascript.info/tutorial/bubbling-and-capturing
 
