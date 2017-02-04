@@ -1,0 +1,52 @@
+1Q.DOM properties and methods?
+
+A.The HTML DOM can be accessed with JavaScript (and with other programming languages). In the DOM, all HTML elements are defined as objects. The programming interface is the properties and methods of each object. A property is a value that you can get or set (like changing the content of an HTML element).
+
+The DOM is a W3C (World Wide Web Consortium) standard. The DOM defines a standard for accessing documents: "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+
+2Q.BOM(Browser object model)?
+A. The Browser Object Model (BOM) is a browser-specific convention referring to all the objects exposed by the web browser. Unlike the Document Object Model, there is no standard for implementation and no strict definition, so browser vendors are free to implement the BOM in any way they wish.
+
+The BOM consists of the objects navigator , history , screen , location and document which are children of window . In the document node is the DOM, the document object model, which represents the contents of the page. You can manipulate it using javascript.
+
+3Q. AJAX in javaScript?
+A. AJAX is a developer's dream, because you can:
+
+Update a web page without reloading the page
+Request data from a server - after the page has loaded
+Receive data from a server - after the page has loaded
+Send data to a server - in the background
+
+
+AJAX stands for Asynchronous JavaScript and XML. In a nutshell, it is the use of the XMLHttpRequest object to communicate with server-side scripts. It can send as well as receive information in a variety of formats, including JSON, XML, HTML, and even text files. AJAX’s most appealing characteristic, however, is its "asynchronous" nature, which means it can do all of this without having to refresh the page. This lets you update portions of a page based upon user events.
+
+The two major features of AJAX allow you to do the following:
+
+Make requests to the server without reloading the page
+Receive and work with data from the server
+
+4Q. what is jQuery?
+A. jQuery is a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto − Write less, do more. jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
+
+5Q. what can jQuery do which JS cannot do?
+A. In a nutshell, jQuery is a set of JavaScript libraries that have been designed specifically to simplify HTML document traversing, animation, event handling, and Ajax interactions. That said, in order to use either one of these scripting languages you need a solid foundation in JavaScript.
+
+jQuery is a wrapper of JavaScript, with much pre-written functionality and DOM traversing. Javascript is a programming language whereas jQuery is a framework to help make writing in javascript easier. It's particularly useful for simply traversing the DOM in an HTML page.
+
+
+6Q. what is $ in jQuery?
+
+A. In jQuery, the $ sign it's just an alias to jQuery() , then an alias to a function. This page reports: Basic syntax is: $(selector).action() A dollar sign to define jQuery. A (selector) to "query (or find)" HTML elements.
+
+7Q.differences between jQuery 1.x vs 2.x vs 3.x?
+A.
+
+Versions of 2.x leave behind the older Internet Explorer 6, 7, and 8 browsers. In return they are smaller, faster, and can be used in JavaScript environments where the code needed for old-IE compatibility often causes problems of its own. The jQuery team still supports the 1.x branch which does run on IE 6/7/8. You can (and should) continue to use jQuery 1.x on web sites that need to accommodate older browsers.
+
+If you compare the different versions of jquery, then following are the differences going from oldest to the latest:
+
+change in implementation of function for performance enhancement
+change in nomenclature and signature of functions
+removal of deprecated functions
+addition of new functions
