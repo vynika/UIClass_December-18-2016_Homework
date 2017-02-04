@@ -1,0 +1,9 @@
+1Q. What is IIFE and why do we use it?
+A. IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+
+ variable hoisting from within blocks, protect against polluting the global environment and simultaneously allow public access to methods while retaining privacy for variables defined within the function. This concept has been referred to as a self-executing anonymous function.
+ syntax:
+ (function(a, b) { … })("hello", "world");
+
+ 2Q.What is namespacing in javaScript?
+ A.
